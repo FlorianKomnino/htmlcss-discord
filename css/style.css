@@ -1,0 +1,327 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* body>header selectors */
+
+header {
+    height: 35rem;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+}
+
+div.header-first-part {
+    height: 4rem;
+    /* background-color: #add8e6; */
+    padding: 1rem;
+}
+
+div.header-second-part {
+    height: 24rem;
+    /* background-color: #00008b; */
+    padding: 2.5rem 0;
+}
+
+div.top-container {
+    width: 65%;
+    height: 2rem;
+    /* background-color: #daa520; */
+    margin: 0 auto;
+    display: flex;
+}
+
+div.logo {
+    display: inline-block;
+    height: 100%;
+    width: 20%;
+    transform: translateY(-0.3rem);
+
+    /* border: 0.2rem dotted black; */
+}
+
+div.top-container nav {
+    display: inline-block;
+    height: 100%;
+    width: 60%;
+    /* border: 0.2rem dotted black; */
+}
+
+div.login {
+    height: 100%;
+    width: 20%;
+    /* border: 0.2rem dotted black; */
+    text-align: right;
+}
+
+div.login>button {
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+    border: none;
+    transform: translateY(-0.3rem);
+}
+
+div.title-container {
+    height: 100%;
+    width: 48%;
+    /* background-color: #ee82ee; */
+    margin: 0 auto;
+    /* border: 0.2rem dotted black; */
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+nav>ul>li {
+    list-style-type: none;
+}
+
+div.title-container h1 {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+div.title-container p {
+    line-height: 1.7rem;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+button.mac-downloader {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    background-color: white;
+    border-radius: 2rem;
+    margin-right: 1.5rem;
+}
+
+button.open-in-browser {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.6rem;
+    border: none;
+    color: white;
+    border-radius: 2rem;
+    background-color: black;
+}
+
+
+.installer-links {
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+
+/* body>main selectors */
+
+section.horizontal-section {
+    height: 30rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+img.horizontal-sections-img {
+    height: 25rem;
+    width: 36rem;
+    /* background-color: #1e90ff; */
+}
+
+article {
+    padding: 2rem 0 1rem 3.5rem;
+}
+
+section.horizontal-section h1,
+section.inverted-horizontal-section h1 {
+    font-size: 2.5rem;
+}
+
+section.horizontal-section p,
+section.inverted-horizontal-section p {
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+
+section.inverted-horizontal-section {
+    height: 30rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    background-color: #f6f6f6;
+}
+
+section.horizontal-section article,
+section.inverted-horizontal-section article {
+    display: inline-block;
+    height: 25rem;
+    width: 24rem;
+    /* background-color: #ffc0cb; */
+}
+
+section.vertical-section {
+    height: 60rem;
+    background-color: #f6f6f6;
+    padding: 2.5rem
+}
+
+section.vertical-section>h1 {
+    font-size: 2.2rem;
+}
+
+section.vertical-section>p {
+    padding: 0 2rem;
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+}
+
+section.vertical-section article {
+    text-align: center;
+    height: 45rem;
+    width: 60rem;
+    margin: 0 auto;
+    background-color: #f6f6f6;
+}
+
+.article-footer h1 {
+    padding-top: 3rem;
+    font-size: 1.8rem;
+    background-image: url(../img/stars.svg);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.article-footer button {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    background-color: white;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    background-color: #8ea1e1;
+    color: white;
+}
+
+/* body>footer selectors */
+
+body>footer {
+    padding-top: 0.5rem;
+    height: 28rem;
+    background-color: #23272a;
+}
+
+body>footer>nav {
+    margin: 0 auto 2rem auto;
+    height: 20rem;
+    width: 60rem;
+    display: flex;
+}
+
+body>footer>aside {
+    margin: 1.5rem auto 0 auto;
+    height: 3.8rem;
+    width: 60rem;
+    /* background-color: #7fffd4; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.footer-logo {
+    width: 3.5rem;
+    height: 1.8rem;
+    background-color: #ffb6c1;
+    color: black;
+    text-align: center;
+    border: 0.2rem dashed black;
+    padding: 0.15rem;
+}
+
+aside>button {
+    /* border: 0.2rem dashed black; */
+    padding: 0.3rem;
+    background-color: #8ea1e1;
+    border-radius: 3rem;
+    padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+    color: white;
+}
+
+.main-footer-section {
+    width: 18rem;
+    height: 100%;
+    /* background-color: #f08080; */
+    /* border: 0.2rem dotted black; */
+}
+
+.main-footer-section h1 {
+    font-size: 2rem;
+    color: #6b81cd
+}
+
+.main-footer-section>p>img {
+    vertical-align: bottom;
+    height: 1rem;
+}
+
+.main-footer-section select {
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-top: 2rem;
+}
+
+.main-footer-section p a img {
+    height: 2rem;
+    margin-top: 2rem;
+}
+
+.footer-section {
+    width: 10.5rem;
+    height: 100%;
+    /* background-color: #20b2aa; */
+    /* border: 0.2rem dotted white; */
+}
+
+.footer-section h1 {
+    color: #778fe5;
+    Font-size: 1rem;
+    margin: 0.5rem 0 0.5rem 1rem;
+}
+
+.footer-section li {
+    list-style-type: none;
+    color: white;
+    Font-size: 0.9rem;
+    margin: 0.5rem 0 0.5rem 1rem;
+}
+
+hr {
+    width: 60rem;
+    margin: 0 auto;
+    color: #4a5781;
+}
+
+footer>aside .logo {
+    transform: translateY(1rem);
+}
+
+
+/* clearfix class */
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
