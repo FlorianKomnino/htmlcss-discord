@@ -5,7 +5,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/* clearfix class */
+/* general selectors */
 
 .flex {
     display: flex;
@@ -14,7 +14,15 @@
 .flex-centered {
     display : flex;
     justify-content: center;
+    align-items: center;
 }
+
+.centered {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .clearfix::after {
     content: "";
@@ -22,29 +30,28 @@
     clear: both;
 }
 
-
+li {
+    list-style-type: none;
+}
 
 /* body>header selectors */
 
-header {
-    height: 35rem;
-    background-image: url(../img/jumbo.png);
-    background-size: cover;
-}
-
 div.header-first-part {
-    height: 4rem;
     padding: 1rem;
+    background-color: #255ee9;
 }
 
 div.header-second-part {
-    height: 24rem;
+    background-image: url(../img/jumbo.png);
     padding: 2.5rem 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 11rem;
 }
 
 div.top-container {
     width: 65%;
-    height: 2rem;
+    /* height: 2rem; */
     margin: 0 auto;
 }
 
@@ -52,7 +59,6 @@ div.logo {
     display: inline-block;
     height: 100%;
     width: 20%;
-    transform: translateY(-0.3rem);
 }
 
 div.top-container nav {
@@ -62,7 +68,6 @@ div.top-container nav {
 }
 
 div.login {
-    height: 100%;
     width: 20%;
     text-align: right;
 }
@@ -71,11 +76,9 @@ div.login>button {
     padding: 0.6rem 1rem;
     border-radius: 2rem;
     border: none;
-    transform: translateY(-0.3rem);
 }
 
 div.title-container {
-    height: 100%;
     width: 48%;
     margin: 0 auto;
 }
@@ -83,10 +86,6 @@ div.title-container {
 nav>ul.flex-centered {
     justify-content: space-evenly;
     color: white;
-}
-
-nav>ul>li {
-    list-style-type: none;
 }
 
 div.title-container h1 {
@@ -123,7 +122,7 @@ button.open-in-browser {
 }
 
 .installer-links {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     text-align: center;
     font-weight: 800;
 }
@@ -132,13 +131,11 @@ button.open-in-browser {
 /* body>main selectors */
 
 section.horizontal-section {
-    height: 30rem;
     padding: 3rem;
     justify-content: center;
 }
 
 img.horizontal-sections-img {
-    height: 25rem;
     width: 36rem;
 }
 
@@ -159,7 +156,6 @@ section.inverted-horizontal-section p {
 
 
 section.inverted-horizontal-section {
-    height: 30rem;
     padding: 3rem;
     justify-content: center;
     background-color: #f6f6f6;
@@ -168,7 +164,6 @@ section.inverted-horizontal-section {
 section.horizontal-section article,
 section.inverted-horizontal-section article {
     display: inline-block;
-    height: 25rem;
     width: 24rem;
 }
 
@@ -209,7 +204,6 @@ section.vertical-section article {
     font-size: 1.2rem;
     padding: 0.6rem 1.5rem;
     border: none;
-    background-color: white;
     border-radius: 2rem;
     margin-top: 2rem;
     background-color: #8ea1e1;
@@ -226,26 +220,16 @@ body>footer {
 
 body>footer>nav {
     margin: 0 auto 2rem auto;
-    height: 20rem;
     width: 60rem;
+    align-items: flex-start;
 }
 
-body>footer>aside.flex-centered {
+aside.flex {
     margin: 1.5rem auto 0 auto;
     height: 3.8rem;
     width: 60rem;
     justify-content: space-between;
-    align-items: center;
-}
-
-div.footer-logo {
-    width: 3.5rem;
-    height: 1.8rem;
-    background-color: #ffb6c1;
-    color: black;
-    text-align: center;
-    border: 0.2rem dashed black;
-    padding: 0.15rem;
+    align-items: flex-start;
 }
 
 aside>button {
@@ -258,12 +242,10 @@ aside>button {
 
 .main-footer-section {
     width: 20rem;
-    height: 100%;
 }
 
 .footer-section {
     width: 10rem;
-    height: 100%;
 }
 
 .main-footer-section h1 {
@@ -295,7 +277,6 @@ aside>button {
 }
 
 .footer-section li {
-    list-style-type: none;
     color: white;
     Font-size: 0.9rem;
     margin: 0.5rem 0 0.5rem 1rem;
@@ -306,8 +287,3 @@ hr {
     margin: 0 auto;
     color: #4a5781;
 }
-
-footer>aside .logo {
-    transform: translateY(1rem);
-}
-
